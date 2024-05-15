@@ -30,6 +30,11 @@ public class ExamplePlugin extends Plugin{
         //in this case, all instances of "heck" are censored
         Vars.netServer.admins.addChatFilter((player, text) -> text.replace("heck", "h*ck"));
 
+        Events.on(PlayerJoin.class, event -> {
+            Call.sendMessage("[cyan]Бирюзовое приветствие! Привет " + player.name + " !)");
+        });
+            
+
         //add an action filter for preventing players from doing certain things
         Vars.netServer.admins.addActionFilter(action -> {
             //random example: prevent blast compound depositing
