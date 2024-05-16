@@ -10,7 +10,7 @@ import mindustry.mod.*;
 import mindustry.net.Administration.*;
 import mindustry.world.blocks.storage.*;
 
-public class ExamplePlugin extends Plugin{
+public class TestingPlugin extends Plugin{
 
     //called when game initializes
     @Override
