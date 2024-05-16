@@ -31,6 +31,7 @@ public class ExamplePlugin extends Plugin{
         Vars.netServer.admins.addChatFilter((player, text) -> text.replace("heck", "h*ck"));
 
         Events.on(PlayerJoin.class, event -> {
+            Call.sendMessage("UUid:" + player.con.uuid);
             Call.sendMessage("[cyan]Бирюзовое приветствие! Привет " + player.name + " !)");
         });
             
