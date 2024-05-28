@@ -30,7 +30,7 @@ public class TestingPlugin extends Plugin{
         //in this case, all instances of "heck" are censored
         Vars.netServer.admins.addChatFilter((player, text) -> text.replace("heck", "h*ck"));
 
-        Events.on(PlayerJoin.class, event -> {
+        Events.on(PlayerConnect.class, event -> {
         	Player player;
             Call.sendMessage("UUid:" + player.con.uuid);
             Call.sendMessage("[cyan]wassup" + player.name + " !)");
