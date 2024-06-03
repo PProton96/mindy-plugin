@@ -32,7 +32,7 @@ public class TestingPlugin extends Plugin{
 
         Events.on(PlayerJoin.class, event -> {
         	Player player;
-            Call.sendMessage("UUid:" + Player.uuid());
+            Call.sendMessage("UUid:" + player.uuid);
             Call.sendMessage("[cyan]wassup" + player.name + " !)");
         });
             
